@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>randompic</title>
+</head>
+    
+    
+<body>
+<script>
+//    var name;
+//    // This ASSIGNS value to the var
+//    name = "Keith Briggs";
+//    // document is the handle to our web page
+//    document.write("<p>" + name + "</p>");
+
+
+    var pictures = [];
+
+    pictures[0]='<img src="images\1.jpg" width=250>';
+    pictures[1]='<img src="images\2.jpg" width=250>';
+    pictures[2]='<img src="images\3.jpg" width=250>';
+    pictures[3]='<img src="images\4.jpg" width=250>';
+    pictures[4]='<img src="images\5.jpg" width=250>';
+
+
+    document.write("<p>" +pictures[0] + "</p>");
+
+    var i=0
+    //variable used to contain controlled random number 
+    var random
+    var spacing="<br>"
+    //while all of array elements haven't been cycled thru
+    while (i<pictures.length){
+        //generate random num between 0 and arraylength-1
+        random=Math.floor(Math.random()*pictures.length)
+        document.write("<p>"+pictures[random]+spacing+"</p>")
+        i++
+    }
+</script>
+<img src="images\1.jpg" width=250>
+<img src="images\2.jpg" width=250>
+<img src="images\3.jpg" width=250>
+<img src="images\4.jpg" width=250>
+<img src="images\5.jpg" width=250>
+
+
+
+
+</body>
+</html>
